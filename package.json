@@ -1,9 +1,9 @@
 {
   "name": "generate-password-browser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy library for generating unique passwords in browsers.",
   "main": "main.js",
-  "types": "types/generate.d.ts",
+  "types": "src/generate.d.ts",
   "scripts": {
     "test": "./node_modules/.bin/mocha",
     "coverage": "sh ./test/coverage.sh",
