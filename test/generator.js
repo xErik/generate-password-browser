@@ -4,7 +4,7 @@ var assert = require('chai').assert,
 // We use a different require path for code coverage.
 var generator = process.env.JSCOV ? require('../src-cov/generate') : require('../main');
 
-describe('generate-password', function() {
+describe('generate-password-browser', function() {
 	describe('generate()', function() {
 		it('should accept to be called without the options parameter', function() {
 			assert.doesNotThrow(function () {

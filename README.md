@@ -1,13 +1,22 @@
-# Generate Password [![Build Status](https://travis-ci.org/brendanashworth/generate-password.svg?branch=master)](https://travis-ci.org/brendanashworth/generate-password) [![codecov](https://codecov.io/gh/brendanashworth/generate-password/branch/master/graph/badge.svg)](https://codecov.io/gh/brendanashworth/generate-password)
+# generate-password-browser (w/ Angular Support) [![Build Status](https://api.travis-ci.org/xama5/generate-password-browser.svg?branch=master)](https://travis-ci.org/xama5/generate-password-browser)
 
-[![Generate-Password NPM](https://nodei.co/npm/generate-password.png?downloads=true&downloadRank=true)](http://npmjs.org/package/generate-password)
+[![Generate-Password NPM](https://nodei.co/npm/generate-password-browser.png?downloads=true&downloadRank=true)](http://npmjs.org/package/generate-password-browser)
 
-> Generate Password is a (relatively) extensive library for generating random and unique passwords.
+
+Generate Password is a (relatively) extensive library for generating random and unique passwords in browsers.
+This is a fork of the original generate-password package https://github.com/brendanashworth/generate-password, but unfortunately it doesn't and [won't](https://github.com/brendanashworth/generate-password/pull/21) support browsers.
+I tested this package with Angular 4 and confirmed it's working in
+
+- Google Chrome 60.0.3112.113
+- Firefox 55.0.3
+- Internet Explorer 11
+
+(I will extend this list in the future)
 
 ## Install
 
 ```bash
-$ npm install generate-password --save
+$ npm install generate-password-browser --save
 ```
 
 ## Usage
@@ -17,7 +26,7 @@ $ npm install generate-password --save
 Generate one password with the given options. Returns a string.
 
 ```javascript
-var generator = require('generate-password');
+var generator = require('generate-password-browser');
 
 var password = generator.generate({
 	length: 10,
@@ -33,7 +42,7 @@ console.log(password);
 Bulk generate multiple passwords at once, with the same options for all. Returns an array.
 
 ```javascript
-var generator = require('generate-password');
+var generator = require('generate-password-browser');
 
 var passwords = generator.generateMultiple(3, {
 	length: 10,
