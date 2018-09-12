@@ -1,3 +1,8 @@
+// https://github.com/angular/angular-cli/issues/9827#issuecomment-386154063
+if (typeof(window) !== 'undefined') {
+	window.global = window.global || window;
+}
+
 var randomBytes = require('randombytes');
 
 var self = module.exports;
