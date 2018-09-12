@@ -5,13 +5,11 @@
 
 Generate Password is a (relatively) extensive library for generating random and unique passwords in browsers.
 This is a fork of the original generate-password package https://github.com/brendanashworth/generate-password, but unfortunately it doesn't and [won't](https://github.com/brendanashworth/generate-password/pull/21) support browsers.
-I tested this package with Angular 4 and confirmed it's working in
+Confirmed to be working with Angular 4, 5 and 6 in these browsers:
 
 - Google Chrome 60.0.3112.113
 - Firefox 55.0.3
 - Internet Explorer 11
-
-(I will extend this list in the future)
 
 ## Install
 
