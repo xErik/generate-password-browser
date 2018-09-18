@@ -10,7 +10,11 @@ var self = module.exports;
 // Generates a random number
 var randomNumber = function(max) {
 	// gives a number between 0 (inclusive) and max (exclusive)
-	return randomBytes(1)[0] % max;
+	var rand = randomBytes(1)[0];
+	while (rand >= 256 - (256 % max)) {
+		rand = randomBytes(1)[0];
+	}
+	return rand % max;
 };
 
 // Possible combinations
